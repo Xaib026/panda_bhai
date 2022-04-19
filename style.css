@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+   padding: 10px 30px;
+   display: block;
+
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Shizuru', cursive;
+    color: white;
+}
+
+.menu li a:hover{
+    background-color: white;
+    color: black;
+    cursor: none;
+    border-radius: 30px;
+   
+}
+.logo{
+    margin: 0 50px;
+    font-family: 'Syne Tactile', cursive;
+}
+.logo-mobile{
+    display: none;
+    margin-bottom: 20px;
+}
+.menu-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 5px 10px;
+    display: none;
+    font-size: 24px;
+}
+
+.menu-black{
+    background-color: black;
+}
+.swiper{
+    height: 500px;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 500px;
+}
+
+
+.swiper-product{
+
+    width: 300px;
+}
+.swiper-product .swiper-slide img{
+    width: 100%;
+    height: 300px;
+}
+.cards{
+    /* background-color: aqua; */
+    color: black !important;
+}
+.text{
+    padding: 20px;
+}
+
+
+/* .shape{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+} */
+
+@media (max-width:767px){
+    header{
+        background-color: rebeccapurple;
+        padding: 20px; 
+         align-items: flex-start;
+         justify-content: space-between;
+         flex-wrap: wrap;
+    }
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+    }
+    .menu li {
+        margin: 10px 0px;
+    }
+    .menu li a{
+        padding: 10px 0;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+

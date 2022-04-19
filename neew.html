@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+    <style>
+        .swiper{
+            width: 300px;
+            height: 400px;
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bg-1{
+    background-color: red;
+}
+.bg-2{
+    background-color: green;
+}
+.bg-3{
+    background-color: yellow;
+}
+
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-1">
+                slide 1
+            </div>
+            <div class="swiper-slide bg-2">
+                slide 1
+            </div>
+            <div class="swiper-slide bg-3">
+                slide 1
+            </div>
+            <div class="swiper-slide">
+                slide 1
+            </div>
+            <div class="swiper-slide">
+                slide 1
+            </div>
+            <div class="swiper-slide">
+                slide 1
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+
+var swiper = new Swiper(".swiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+</script>

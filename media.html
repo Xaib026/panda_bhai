@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo-mobile">LOGO</a>
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul class="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+        </ul>
+        <a href="#" class="logo">LOGO</a>
+        <ul class="menu">
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="shape">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="images/slider-1.webp" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://i.pinimg.com/736x/6b/76/48/6b7648b3644d267e085ece5171d8efc0.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.thoughtco.com/thmb/ffq_WyahkhTCuWMwG2Rkic8BHoQ=/2121x1193/smart/filters:no_upscale()/GettyImages-874541852-5c4aad0146e0fb0001f8bbe4.jpg"
+                        alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="swiper swiper-product">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="cards">
+                    <img src="https://i.pinimg.com/736x/6b/76/48/6b7648b3644d267e085ece5171d8efc0.jpg" alt="">
+                    <!-- <div class="text">
+                        <h4>Product Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa.</p>
+                        <p>Rs 2300.00</p>
+                        <button>Buy Now</button>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <img src="https://i.pinimg.com/736x/6b/76/48/6b7648b3644d267e085ece5171d8efc0.jpg" alt="">
+                    <!-- <div class="text">
+                        <h4>Product Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa.</p>
+                        <p>Rs 2300.00</p>
+                        <button>Buy Now</button>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <img src="https://i.pinimg.com/736x/6b/76/48/6b7648b3644d267e085ece5171d8efc0.jpg" alt="">
+                    <!-- <div class="text">
+                        <h4>Product Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa.</p>
+                        <p>Rs 2300.00</p>
+                        <button>Buy Now</button>
+                    </div> -->
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="cards" data-aos="fade-right">
+                    <img src="https://i.pinimg.com/736x/6b/76/48/6b7648b3644d267e085ece5171d8efc0.jpg" alt="">
+                    <!-- <div class="text">
+                        <h4>Product Name</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa.</p>
+                        <p>Rs 2300.00</p>
+                        <button>Buy Now</button>
+                    </div> -->
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".menu-btn").click(function () {
+            $(".menu").toggle();
+            $(".menu-btn i").toggleClass("fa-xmark")
+        })
+    });
+
+
+
+    const swiper = new Swiper('.swiper', {
+        loop: true
+    });
+    const swiper2 = new Swiper('.swiper-product', {
+        loop: true,
+        effects:"cards",
+    });
+    AOS.init();
+</script>
